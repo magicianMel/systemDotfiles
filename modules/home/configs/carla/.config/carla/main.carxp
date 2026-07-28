@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.5'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <Transport>
+  <BeatsPerMinute>120</BeatsPerMinute>
+ </Transport>
+
+ <!-- Denoiser Classic -->
+ <Plugin>
+  <Info>
+   <Type>VST3</Type>
+   <Name>Denoiser Classic</Name>
+   <Binary>/home/nicole/.vst3/Bertom_DenoiserClassic.vst3</Binary>
+   <Label>Denoiser Classic</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x9</Options>
+
+   <Chunk>
+VkMyIbYDAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8VlNUM1BsdWdpblN0YXRlPjxJQ29tcG9uZW50PjYzNS5QRWxiZzBWWXpV
+bGJ5QVAuQkQxWHpVV1hyd3phMllqYmtFRy5Bai5BLi4uLmYuLi40LlRYaVFXY2d3RlJvY0ZaRklXWXdBUC5JUC4uLi4uLi4uenkuRXZDUEVqVEEwRC5BSFBa
+akFQLkhUZlBZQVVQU01FLjFFRmEwVUYuQWouQS4uLi4uLi4uLi4uLlBFalRBMEQuQUhQWmpBUC5IVC5SRklUUkFNRS4xRUZhMFVGLkFqLkEuLi4uLi4uLi4u
+Li5QRWpUQTBELkFIUFpqQVAuSlQuUkljRFJGSVVRUUFmY2d3VmNrQVAuSVAuLi4uLi4uLnp5LkEuVEFJVVBNQVAuQmpGWS5EZkJFZkRURTRUUEJ3VFEuWFdY
+clVXWS5EUEJELi4uLi4uLi4uLi4uLlVQUkVUUy5EZi5vUUYuQWpQQUw4elVGSVVRUUFmY2d3VmNrQVAuSVAuLi4uLkguLlBOLkEuVEFJVVBNQVAuQmpGWS5E
+ZkJFdkRURTRUUEJ3VFEuWFdYclVXWS5EUEJELi4uLi4uLi4uLi4uLlVQUkVUUy5EZi5vUUYuQVBQQVJFQy4xRUZhMFVGLkFqLkEuLi4uLi4uLlg1Qy5QRWpU
+QTBELkFIUFpqQVAuRFRmVHguZmNnd1Zja0FQLklQLi4uLi4ueUx5Qi5DLlRBSVVQTUFQLkJqRlkuRC5BRUgwTC5YV1hyVVdZLkRQQkQuLi4uLmxZbDRBdi4u
+VVBSRVRTLkRmLm9RRi5BUFBBUlFDLjFFRmEwVUYuQWouQS4uLi5mbFlsZy5MLlBFalRBMEQuQUhQWmpBUC5EVGZUMC5mY2d3VmNrQVAuSVAuLi4uLi4uLnZI
+LkMuVEFJVVBNQVAuQmpGWS5ELkFFSGtNLlhXWHJVV1kuRFBCRC4uLi4uSnlMUy52Li5VUFJFVFMuRGYub1FGLkFmUEFTUUVTSTR6Ui5YV1hyVVdZLkRQQkQu
+Li4uLi4uLi4uLi4uVVBSRVRTLkRmLm9RRi5BTFBBVEFmY2d3VmNrQVAuSVAuLi4uLnZMeVhRLkNQUWprRmN1STJUekVGY2tBLi4uLi4uLi4uLi4uLi4uLi4u
+Li4uLi4uZlJVTVRRUElXWjFFRmNrUVRYekVGPC9JQ29tcG9uZW50PjwvVlNUM1BsdWdpblN0YXRlPgA=
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>HyperX QuadCast Analog Stereo:capture_FL</Source>
+   <Target>Denoiser Classic:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>HyperX QuadCast Analog Stereo:capture_FR</Source>
+   <Target>Denoiser Classic:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Spectrum:output_FL</Source>
+   <Target>Output Level Meter:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Spectrum:output_FR</Source>
+   <Target>Output Level Meter:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Output Level Meter:output_FL</Source>
+   <Target>Easy Effects Source:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Output Level Meter:output_FR</Source>
+   <Target>Easy Effects Source:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Denoiser Classic:output_1</Source>
+   <Target>Microphone:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Denoiser Classic:output_2</Source>
+   <Target>Microphone:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>WEBRTC VoiceEngine:output_FL</Source>
+   <Target>Easy Effects Sink:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>WEBRTC VoiceEngine:output_FL</Source>
+   <Target>OBS: Discord:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>WEBRTC VoiceEngine:output_FR</Source>
+   <Target>Easy Effects Sink:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>WEBRTC VoiceEngine:output_FR</Source>
+   <Target>OBS: Discord:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Limiter (Mic):output_FL</Source>
+   <Target>Spectrum:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Limiter (Mic):output_FR</Source>
+   <Target>Spectrum:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Stereo Tools (Mic):output_FL</Source>
+   <Target>Pitch (Mic):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Stereo Tools (Mic):output_FR</Source>
+   <Target>Pitch (Mic):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Delay (Mic):output_FL</Source>
+   <Target>Reverberation (Mic):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Delay (Mic):output_FR</Source>
+   <Target>Reverberation (Mic):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Gate (Mic):output_FL</Source>
+   <Target>Compressor (Mic):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Gate (Mic):output_FR</Source>
+   <Target>Compressor (Mic):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Crusher (Mic):output_FL</Source>
+   <Target>Stereo Tools (Mic):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Crusher (Mic):output_FR</Source>
+   <Target>Stereo Tools (Mic):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Crystalizer (Mic):output_FL</Source>
+   <Target>Limiter (Mic):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Crystalizer (Mic):output_FR</Source>
+   <Target>Limiter (Mic):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Output Level Meter:output_FL-444</Source>
+   <Target>Ryzen HD Audio Controller Analog Stereo:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Output Level Meter:output_FR-445</Source>
+   <Target>Ryzen HD Audio Controller Analog Stereo:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Spectrum:output_FL-449</Source>
+   <Target>Output Level Meter:input_FL-442</Target>
+  </Connection>
+  <Connection>
+   <Source>Spectrum:output_FR-450</Source>
+   <Target>Output Level Meter:input_FR-443</Target>
+  </Connection>
+  <Connection>
+   <Source>Equalizer (Speakers):output_FL</Source>
+   <Target>Spectrum:input_FL-447</Target>
+  </Connection>
+  <Connection>
+   <Source>Equalizer (Speakers):output_FR</Source>
+   <Target>Spectrum:input_FR-448</Target>
+  </Connection>
+  <Connection>
+   <Source>Deesser (Mic):output_FL</Source>
+   <Target>Equalizer (Mic):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Deesser (Mic):output_FR</Source>
+   <Target>Equalizer (Mic):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Compressor (Mic):output_FL</Source>
+   <Target>Deesser (Mic):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Compressor (Mic):output_FR</Source>
+   <Target>Deesser (Mic):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Pitch (Mic):output_FL</Source>
+   <Target>Pitch (Mic):input_FL-1016</Target>
+  </Connection>
+  <Connection>
+   <Source>Pitch (Mic):output_FR</Source>
+   <Target>Pitch (Mic):input_FR-1017</Target>
+  </Connection>
+  <Connection>
+   <Source>Pitch (Mic):output_FL-1018</Source>
+   <Target>Delay (Mic):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Pitch (Mic):output_FR-1019</Source>
+   <Target>Delay (Mic):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Reverberation (Mic):output_FL</Source>
+   <Target>Crystalizer (Mic):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Reverberation (Mic):output_FR</Source>
+   <Target>Crystalizer (Mic):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Equalizer (Mic):output_FL</Source>
+   <Target>Crusher (Mic):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Equalizer (Mic):output_FR</Source>
+   <Target>Crusher (Mic):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Microphone:capture_FL</Source>
+   <Target>WEBRTC VoiceEngine:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Microphone:capture_FL</Source>
+   <Target>Gate (Mic):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Microphone:capture_FR</Source>
+   <Target>WEBRTC VoiceEngine:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Microphone:capture_FR</Source>
+   <Target>Gate (Mic):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Easy Effects Source:capture_FL</Source>
+   <Target>Ryzen HD Audio Controller Analog Stereo:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Easy Effects Source:capture_FR</Source>
+   <Target>Ryzen HD Audio Controller Analog Stereo:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Easy Effects Sink:monitor_FL</Source>
+   <Target>Equalizer (Speakers):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Easy Effects Sink:monitor_FR</Source>
+   <Target>Equalizer (Speakers):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>OBS: Music/Browser:monitor_FL</Source>
+   <Target>OBS: Music/Browser:input_FL-762</Target>
+  </Connection>
+  <Connection>
+   <Source>OBS: Music/Browser:monitor_FR</Source>
+   <Target>OBS: Music/Browser:input_FR-763</Target>
+  </Connection>
+  <Connection>
+   <Source>OBS: Discord:monitor_FL</Source>
+   <Target>OBS: Discord:input_FL-752</Target>
+  </Connection>
+  <Connection>
+   <Source>OBS: Discord:monitor_FR</Source>
+   <Target>OBS: Discord:input_FR-753</Target>
+  </Connection>
+  <Connection>
+   <Source>OBS: Games:monitor_FL</Source>
+   <Target>OBS: Games:input_FL-740</Target>
+  </Connection>
+  <Connection>
+   <Source>OBS: Games:monitor_FR</Source>
+   <Target>OBS: Games:input_FR-741</Target>
+  </Connection>
+  <Positions>
+   <Position x1="999" y1="54" x2="2056" y2="1274">
+    <Name>HyperX QuadCast Analog Stereo</Name>
+   </Position>
+   <Position x1="1840" y1="1465" x2="2117" y2="1496">
+    <Name>Navi 10 HDMI Audio Digital Stereo (HDMI 4)</Name>
+   </Position>
+   <Position x1="1345" y1="198">
+    <Name>Microphone</Name>
+   </Position>
+   <Position x1="1216" y1="364">
+    <Name>Easy Effects Source</Name>
+   </Position>
+   <Position x1="1281" y1="97" pluginId="0">
+    <Name>Denoiser Classic</Name>
+   </Position>
+  </Positions>
+ </ExternalPatchbay>
+</CARLA-PROJECT>

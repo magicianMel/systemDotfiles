@@ -1,0 +1,111 @@
+{ config, lib, pkgs, ... }:
+
+{
+  imports =
+    [ 
+      /etc/nixos/hardware-configuration.nix
+    ];
+   boot.supportedFilesystems = [ "ntfs" ];
+   
+   boot.loader = {
+      timeout = 10;
+         efi = {
+	    efiSysMountPoint = "/boot";
+	 };
+	 
+	 grub = {
+	    enable = true;
+	    efiSupport = true;
+	    efiInstallAsRemovable = true;
+	    devices = [ "nodev" ];
+	    useOSProber = true;
+	    extraEntriesBeforeNixOS = false;
+	    extraEntries = ''
+	       menuentry "reboot" {
+		  reboot
+	       }
+	       menuentry "shutdown" {
+		  halt
+	       }
+	    '';
+	 };
+   };
+
+   fileSystems."/mnt/duper" =  {
+      device = "/dev/disk/by-uuid/7EDF543B77C64B01";
+      fsType = "ntfs";
+      options = [ "nofail" ];
+   };
+       
+  
+
+   networking.hostName = "circuit"; # Define your hostname.
+
+ 
+  networking.networkmanager.enable = true;
+
+
+   time.timeZone = "Asia/Singapore";
+ 
+  services.xserver = {
+	enable = true;
+	autoRepeatDelay = 200;
+	autoRepeatInterval = 35;
+	desktopManager.plasma6.enable = true;
+  };
+  services.displayManager.ly.enable = true;
+  
+   services.pulseaudio.enable = false;
+   services.pipewire = {
+     enable = true;
+     pulse.enable = true;
+     alsa.enable = true;
+     alsa.support32Bit = true;
+     jack.enable = true;
+   };
+
+   nixpkgs.config.allowUnfree = true;
+
+   users.users.cli = {
+     isNormalUser = true;
+     extraGroups = [ "wheel" "networkmanager" "audio" ]; # Enable ‘sudo’ for the user.
+     packages = with pkgs; [
+       tree
+       keepassxc
+       
+     ];
+   };
+
+   programs.firefox.enable = true;
+   programs.steam.enable = true;
+
+   environment.systemPackages = with pkgs; [
+     vim 
+     wget
+     alacritty
+     ntfs3g
+     bat
+     ntfsprogs
+     neovim
+     
+   ];
+
+  fonts.packages = with pkgs; [
+   corefonts
+   noto-fonts
+   noto-fonts-monochrome-emoji
+   noto-fonts-color-emoji
+   noto-fonts-cjk-sans
+   noto-fonts-cjk-serif
+   noto-fonts-cjk-sans-static
+   noto-fonts-cjk-serif-static
+   wqy_zenhei
+
+   nerd-fonts.jetbrains-mono
+  ];
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  system.stateVersion = "26.05"; # Did you read the comment?
+
+}
+
