@@ -2,20 +2,24 @@
   description = "NixOS Flake";
   inputs = {
 		nixpkgs.url = "nixpkgs/nixos-26.05";
+		nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+		nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
 
     home-manager = {
 			url = "github:nix-community/home-manager/release-26.05";
 			inputs.nixpkgs.follows = "nixpkgs";
+			inputs.nixpkgs-unstable.follows = "nixpkgs-unstable";
 		};
   };
   
-  outputs = { self, nixpkgs, home-manager, ... }@inputs : {
+  outputs = { self, nixpkgs, nixpkgs-unstable, ... } @ inputs:
+	{ 
 		nixosConfigurations.circuit = nixpkgs.lib.nixosSystem {
 			specialArgs = { inherit inputs; };
-			system = "x86_64-linux";
-			modules = [ 
+			modules = [
 				./hosts/circuit/configuration.nix
+				inputs.home-manager.nixosModules.default
 			];
 		};
-  };
+	};
 }

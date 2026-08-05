@@ -1,7 +1,7 @@
 { config, ... }:
 {
   imports = [
-    ./configs
-    ./programs
+    ./krita
+    ./obs-studio
   ];
 }

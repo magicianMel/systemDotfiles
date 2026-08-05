@@ -1,7 +1,7 @@
 { config, ... }:
 {
   imports = [
-    ./configs
-    ./programs
+    ./cli
+    ./guiTools
   ];
 }

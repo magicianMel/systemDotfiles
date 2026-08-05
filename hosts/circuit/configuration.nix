@@ -4,9 +4,11 @@
   imports =
     [ 
       /etc/nixos/hardware-configuration.nix
-      /home/cli/nixosDotfiles/modules/nixosModules
+      /home/clio/nixosDotfiles/modules/nixos
       inputs.home-manager.nixosModules.home-manager
     ];
+
+
    boot.supportedFilesystems = [ "ntfs" ];
 
    fileSystems."/mnt/duper" =  {
@@ -21,12 +23,13 @@
 	  useGlobalPkgs = true;
 	  useUserPackages = true;
 	  users = {
-      cli = import ./home.nix;
+      "clio" = import ./home.nix;
     };
 	  backupFileExtension = "backup";
   };
 				
-		
+	programs.appimage.enable = true;
+  programs.appimage.binfmt = true;
 
    networking.hostName = "circuit"; # Define your hostname.
 
@@ -38,7 +41,7 @@
 
    nixpkgs.config.allowUnfree = true;
 
-   users.users.cli = {
+   users.users.clio = {
      isNormalUser = true;
      extraGroups = [ "wheel" "networkmanager" "audio" ]; # Enable ‘sudo’ for the user.
      packages = with pkgs; [

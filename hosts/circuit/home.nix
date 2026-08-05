@@ -1,8 +1,8 @@
 { config, pkgs, inputs, ... }: 
 
 {
-  home.username = "cli";
-  home.homeDirectory = "/home/cli";
+  home.username = "clio";
+  home.homeDirectory = "/home/clio";
   home.stateVersion = "26.05";
 
   imports = [
@@ -24,14 +24,6 @@
     obsidian
     kitty
     easyeffects
-    (pkgs.wrapOBS 
-      {plugins = with pkgs.obs-studio-plugins ; [
-        wlrobs
-        obs-pipewire-audio-capture
-        obs-vaapi
-        obs-vkcapture
-	]; 
-      })
     vscodium
   ];
 
