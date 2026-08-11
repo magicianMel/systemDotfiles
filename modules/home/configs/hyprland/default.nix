@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 {
-  home.file.".config/hypr" = {
+  xdg.configFile."hypr" = {
     source = ./hypr;
     recursive = true;
     force = true;

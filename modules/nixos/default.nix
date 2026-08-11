@@ -4,7 +4,6 @@
   imports = [
     ./system
     ./ddwManagers
-    ./gamePackages
-    ./cliTools
+    ./programs
   ];
 }

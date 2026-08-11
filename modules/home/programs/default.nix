@@ -1,7 +1,12 @@
 { config, ... }:
 {
   imports = [
-    ./cli
-    ./guiTools
+    ./browsers
+    ./media
+    ./comms
+    ./commandline
+    ./desktop
+    ./fileManagers
+    ./productivity
   ];
 }

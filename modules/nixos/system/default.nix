@@ -4,12 +4,11 @@
   imports = [
     ./network
     ./audio
-    ./screenshotsClipboard
+    ./compilers
+    ./ssClipboard
     ./grub
-    ./quickshell
     ./fonts
     ./hardware
-    ./fileManagers
     ./flatpak
   ];
 }
