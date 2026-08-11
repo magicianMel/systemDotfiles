@@ -3,5 +3,7 @@
   imports = [
     ./thunar
     ./yazi
+    ./syncthing
+    ./keepass
   ];
 }

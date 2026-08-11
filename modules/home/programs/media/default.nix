@@ -3,7 +3,7 @@
   imports = [
     ./tagging
     ./downloaders
-    ./music
+    ./audio
     ./videos
     ./games
   ];

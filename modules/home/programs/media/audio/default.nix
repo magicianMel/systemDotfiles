@@ -23,5 +23,10 @@
   home.packages = with pkgs; [
     mpc
     playerctl
+    cava
+    mpd-mpris
+    mpd-discord-rpc
+    carla
+    easyeffects
   ];
 }

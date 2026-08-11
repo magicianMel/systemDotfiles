@@ -6,7 +6,7 @@
     ./comms
     ./commandline
     ./desktop
-    ./fileManagers
+    ./managers
     ./productivity
   ];
 }

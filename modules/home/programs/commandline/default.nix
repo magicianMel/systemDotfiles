@@ -4,5 +4,6 @@
     ./fastfetch
     ./neovim
     ./kitty
+    ./git
   ];
 }

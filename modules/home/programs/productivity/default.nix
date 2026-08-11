@@ -4,5 +4,6 @@
     ./krita
     ./obs
     ./blender
+    ./obsidian
   ];
 }

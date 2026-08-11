@@ -32,10 +32,6 @@
   programs.appimage.binfmt = true;
 
    networking.hostName = "circuit"; # Define your hostname.
-
- 
-
-
    time.timeZone = "Asia/Singapore";
 
 
@@ -44,36 +40,7 @@
    users.users.clio = {
      isNormalUser = true;
      extraGroups = [ "wheel" "networkmanager" "audio" ]; # Enable ‘sudo’ for the user.
-     packages = with pkgs; [
-       tree
-       keepassxc
-       
-     ];
    };
-
-   environment.systemPackages = with pkgs; [
-     vim 
-     wget
-     git
-     alacritty
-     ntfs3g
-     bat
-     ntfsprogs
-     neovim
-     fish
-     htop
-     btop
-     hwinfo
-     bat
-     wget
-     yt-dlp
-     git
-     kitty
-     alacritty
-     rmpc
-     mpc
-     mpdscribble
-   ];
 
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
