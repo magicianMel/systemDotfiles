@@ -24,6 +24,7 @@ hl.window_rule({
         initial_class      = "kitty",
     },
     float   = true,
+    opacity = "0.8 override 0.5 override 0.5 override",
     size = {960, 600},
 })
 

@@ -3,6 +3,7 @@
 {
   imports = [
     ./network
+    ./nh
     ./audio
     ./compilers
     ./ssClipboard

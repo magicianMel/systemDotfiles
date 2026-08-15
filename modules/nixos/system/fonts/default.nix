@@ -13,4 +13,10 @@
 
     nerd-fonts.jetbrains-mono
   ];
+
+  fonts.fontconfig.defaultFonts = {
+    serif = ["Noto Serif"];
+    sansSerif = ["Inter" "Noto Sans"];
+    monospace = ["JetBrains Mono"];
+  };
 }

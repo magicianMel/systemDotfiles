@@ -1,14 +1,42 @@
 { config, pkgs, ... }:
 {
-  programs.zsh = {
+  programs.starship = {
     enable = true;
-    enableCompletion = true;
-    autosuggestion.enable = true;
-    syntaxHighlighting.enable = true;
+    enableBashIntegration = true;
+  };
+  programs.bash = {
+    enable = true;
+    shellAliases = {
+      neofetch = "fastfetch";
+      cp = "cp -r";
+    };
 
-    history.size = 10000;
-    history.ignoreAllDups = true;
-    history.path = "$HOME/.zsh_history";
-    history.ignorePatterns = [ "rm *" "pkill *" "cp *" ];
+    bashrcExtra = ''
+      PS1='\[\e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\$ '
+
+      function ya() { # yazi: cd into cwd on quit
+        local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+        yazi "$@" --cwd-file="$tmp"
+        if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+          cd -- "$cwd"
+        fi
+        rm -f -- "$tmp"
+      }
+
+      delete-generations() {
+        sudo nix-env --delete-generations "$@" --profile /nix/var/nix/profiles/system
+       }
+
+      # wraps tack around gh auth token to bypass rate limits
+      # omits the need for programs.tack.nixConfTokens = true;
+      # also stays platform agnostic rather than being locked to nixOS
+      # use gh auth login to configure the credentials
+      tack() {
+        GH_TOKEN="$(gh auth token)" command tack "$@"
+      }
+
+      fastfetch
+    '';
   };
 }
+
