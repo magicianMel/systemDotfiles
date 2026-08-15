@@ -5,5 +5,6 @@
     ./neovim
     ./kitty
     ./git
+    ./zsh
   ];
 }

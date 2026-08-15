@@ -24,6 +24,7 @@ hl.window_rule({
         initial_class      = "kitty",
     },
     float   = true,
+    size = {960, 600},
 })
 
 hl.window_rule({
