@@ -2,8 +2,8 @@
 
 {
   imports = [ 
-    /etc/nixos/hardware-configuration.nix
-    /home/clio/nixosDotfiles/modules/nixos
+    ./hardware-configuration.nix
+    ../../modules/nixos
     inputs.home-manager.nixosModules.home-manager
     inputs.nix-secrets.nixosModules.default
   ];
