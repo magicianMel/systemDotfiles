@@ -3,12 +3,13 @@
 {
   imports = [
     ./network
+    ./secrets
+    ./bluetooth
     ./nh
     ./audio
     ./compilers
     ./ssClipboard
     ./grub
-    ./fonts
     ./hardware
     ./flatpak
   ];

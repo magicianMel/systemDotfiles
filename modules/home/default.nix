@@ -2,6 +2,7 @@
 {
   imports = [
     ./configs
+    ./system
     ./programs
   ];
 }

@@ -1,12 +1,12 @@
 { inputs, config, lib, pkgs, ... }:
 
 {
-  imports =
-    [ 
-      /etc/nixos/hardware-configuration.nix
-      /home/clio/nixosDotfiles/modules/nixos
-      inputs.home-manager.nixosModules.home-manager
-    ];
+  imports = [ 
+    /etc/nixos/hardware-configuration.nix
+    /home/clio/nixosDotfiles/modules/nixos
+    inputs.home-manager.nixosModules.home-manager
+    inputs.nix-secrets.nixosModules.default
+  ];
 
 
    boot.supportedFilesystems = [ "ntfs" ];
@@ -19,28 +19,28 @@
        
 
   home-manager = {
-	  extraSpecialArgs = { inherit inputs; };
-	  useGlobalPkgs = true;
-	  useUserPackages = true;
-	  users = {
+    extraSpecialArgs = { inherit inputs; };
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    users = {
       "clio" = import ./home.nix;
     };
-	  backupFileExtension = "backup";
+    backupFileExtension = "backup";
   };
 				
-	programs.appimage.enable = true;
+  programs.appimage.enable = true;
   programs.appimage.binfmt = true;
 
-   networking.hostName = "circuit"; # Define your hostname.
-   time.timeZone = "Asia/Singapore";
+  networking.hostName = "circuit"; 
+  time.timeZone = "Asia/Singapore";
 
 
-   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = true;
 
-   users.users.clio = {
-     isNormalUser = true;
-     extraGroups = [ "wheel" "networkmanager" "audio" ]; # Enable ‘sudo’ for the user.
-   };
+  users.users.clio = {
+    isNormalUser = true;
+    extraGroups = [ "wheel" "networkmanager" "audio" ];
+  };
 
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

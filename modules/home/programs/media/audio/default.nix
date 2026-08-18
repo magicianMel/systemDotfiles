@@ -14,6 +14,12 @@
 
   services.mpdscribble = {
     enable = true;
+    endpoints = {
+      "last.fm" = {
+	passwordFile = "/run/nix-secrets/secrets/lastfm_password";
+	username = "hakiicho";
+      };
+    };
   };
 
   programs.rmpc = {

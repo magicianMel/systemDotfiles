@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  fonts.packages = with pkgs; [
+  home.packages = with pkgs; [
     corefonts
     noto-fonts
     noto-fonts-monochrome-emoji
@@ -10,13 +10,5 @@
     noto-fonts-cjk-sans-static
     noto-fonts-cjk-serif-static
     wqy_zenhei
-
-    nerd-fonts.jetbrains-mono
   ];
-
-  fonts.fontconfig.defaultFonts = {
-    serif = ["Noto Serif"];
-    sansSerif = ["Inter" "Noto Sans"];
-    monospace = ["JetBrains Mono"];
-  };
 }
