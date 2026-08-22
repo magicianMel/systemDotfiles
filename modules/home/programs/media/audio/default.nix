@@ -2,7 +2,7 @@
 {
   services.mpd = {
     enable = true;
-    musicDirectory = "${config.home.homeDirectory}/Music";
+    musicDirectory = "${config.home.homeDirectory}/audio";
     playlistDirectory = "/mnt/duper/music/playlists/";
     extraConfig = ''
       audio_output {

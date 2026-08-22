@@ -3,7 +3,6 @@
 {
   imports = [
     ./system
-    ./ddwManagers
     ./programs
   ];
 }

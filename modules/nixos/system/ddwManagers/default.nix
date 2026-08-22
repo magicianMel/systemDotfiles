@@ -3,6 +3,7 @@
 {
   imports = [
     ./hyprland
+    ./portals
     ./kdePlasma
     ./sddm
     ./niri

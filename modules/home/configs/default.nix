@@ -4,6 +4,7 @@
     ./hyprland
     ./kitty
     ./nvim
+    ./niri
     ./mpv
     ./quickshell
     ./rmpc

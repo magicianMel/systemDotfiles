@@ -17,7 +17,6 @@
       options = [ "nofail" ];
    };
        
-
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     useGlobalPkgs = true;
@@ -27,13 +26,15 @@
     };
     backupFileExtension = "backup";
   };
-				
-  programs.appimage.enable = true;
-  programs.appimage.binfmt = true;
+
+  # appimage
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
 
   networking.hostName = "circuit"; 
   time.timeZone = "Asia/Singapore";
-
 
   nixpkgs.config.allowUnfree = true;
 
@@ -41,7 +42,6 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "audio" ];
   };
-
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "26.05"; # if you touch this they'll get you

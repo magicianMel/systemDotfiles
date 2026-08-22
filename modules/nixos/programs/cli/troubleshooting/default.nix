@@ -4,5 +4,6 @@
     htop
     btop
     hwinfo
+    speedtest-cli
   ];
 }

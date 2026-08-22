@@ -1,0 +1,6 @@
+spawn-sh-at-startup "swaync"
+spawn-at-startup "qs"
+spawn-sh-at-startup "awww-daemon"
+spawn-at-startup "easyeffects"
+spawn-sh-at-startup "obs --disable-shutdown-check"
+spawn-sh-at-startup "copyq --start-server"

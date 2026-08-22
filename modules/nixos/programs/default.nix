@@ -2,5 +2,8 @@
 {
   imports = [
     ./steam
+    ./dependencies
+    ./flatpak
+    ./cli
   ];
 }

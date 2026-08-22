@@ -5,12 +5,11 @@
     ./network
     ./secrets
     ./bluetooth
+    ./ddwManagers
     ./nh
     ./audio
-    ./compilers
     ./ssClipboard
     ./grub
     ./hardware
-    ./flatpak
   ];
 }
