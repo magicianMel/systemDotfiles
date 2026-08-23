@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 {
   programs.obs-studio = {
     enable = true;
@@ -8,6 +8,11 @@
       obs-pipewire-audio-capture
       obs-vaapi
       obs-vkcapture
+      obs-websocket
     ];
   };
+
+  home.packages = [
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.system}.obs-cmd
+  ];
 }

@@ -12,6 +12,9 @@ binds {
     // open browser
     Mod+B { spawn "firefox"; }
 
+    // save obs replay
+    Alt+Grave { spawn-sh "obs-cmd replay save"; }
+
     // open menu
     Mod+Space hotkey-overlay-title="Run an Application: rofi" { spawn-sh "~/.config/rofi/launchers/type-2/launcher.sh"; }
 

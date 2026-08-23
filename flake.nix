@@ -2,7 +2,7 @@
   description = "NixOS Flake";
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-26.05";
-    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     nix-secrets.url = "github:unnamed-systems/nix-secrets/dev";
     home-manager = {
