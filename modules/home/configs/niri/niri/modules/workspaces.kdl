@@ -1,0 +1,4 @@
+workspace "default"
+workspace "chat"
+workspace "game"
+workspace "background"

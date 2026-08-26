@@ -3,3 +3,16 @@ window-rule {
     clip-to-geometry true
 }
 
+window-rule {
+  match app-id=r#"^com\.obsproject\.Studio$"#
+  
+  open-on-workspace "background"
+}
+
+window-rule {
+  match app-id="mpv"
+
+  open-floating true
+}
+
+

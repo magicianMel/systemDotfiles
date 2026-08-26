@@ -20,6 +20,7 @@
 	username = "hakiicho";
       };
     };
+    verbose = 2;
   };
 
   programs.rmpc = {
