@@ -13,6 +13,7 @@
   # lowercase user directories
   xdg.userDirs = {
     enable = true;
+    createDirectories = true;
     desktop = "${config.home.homeDirectory}/desktop";
     music = "${config.home.homeDirectory}/audio";
     download = "${config.home.homeDirectory}/downloads";
@@ -22,6 +23,19 @@
     projects = "${config.home.homeDirectory}/projects";
     templates = "${config.home.homeDirectory}/templates";
     publicShare = "${config.home.homeDirectory}/public";
-    createDirectories = true;
+  };
+
+  # cursor
+
+  home.packages = [ pkgs.hyprcursor ];
+  home.pointerCursor = {
+    enable = true;
+    package = pkgs.posy-cursors;
+    name = "Posy_Cursor_Black";
+    size = 32;
+    gtk.enable = true;
+    x11.enable = true;
+    hyprcursor.enable = true;
+    hyprcursor.size = 32;
   };
 }

@@ -23,6 +23,9 @@
     verbose = 2;
   };
 
+  services.mpd-discord-rpc.enable = true;
+  services.mpd-mpris.enable = true;
+
   programs.rmpc = {
     enable = true;
   };
@@ -31,9 +34,8 @@
     mpc
     playerctl
     cava
-    mpd-mpris
-    mpd-discord-rpc
     carla
+    mpd-discord-rpc
     easyeffects
   ];
 }
