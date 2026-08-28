@@ -26,16 +26,16 @@
   };
 
   # cursor
-
+  # set XCURSOR_THEME & XCURSOR_SIZE in configuration.nix
   home.packages = [ pkgs.hyprcursor ];
   home.pointerCursor = {
     enable = true;
-    package = pkgs.posy-cursors;
-    name = "Posy_Cursor_Black";
-    size = 32;
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Ice";
+    size = 16;
     gtk.enable = true;
     x11.enable = true;
     hyprcursor.enable = true;
-    hyprcursor.size = 32;
+    hyprcursor.size = 16;
   };
 }

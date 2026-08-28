@@ -27,12 +27,6 @@
     backupFileExtension = "backup";
   };
 
-  # appimage
-  programs.appimage = {
-    enable = true;
-    binfmt = true;
-  };
-
   networking.hostName = "circuit"; 
   time.timeZone = "Asia/Singapore";
 
