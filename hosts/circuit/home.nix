@@ -31,7 +31,7 @@
   home.pointerCursor = {
     enable = true;
     package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Ice";
+    name = "Bibata-Modern-Amber";
     size = 16;
     gtk.enable = true;
     x11.enable = true;
