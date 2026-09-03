@@ -7,6 +7,7 @@
 
   imports = [
     ./../../modules/home
+    ./../../assets/configs
   ];
   programs.home-manager.enable = true;
 
