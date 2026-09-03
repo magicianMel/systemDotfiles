@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 {
   xdg.configFile."niri" = {
-    source = config.lib.file.mkOutOfStoreSymlink "/home/clio/nixosDotfiles/modules/home/configs/niri/niri";
+    source = config.lib.file.mkOutOfStoreSymlink "/home/clio/nixosDotfiles/assets/configs/niri/niri";
     recursive = true;
     force = true;
   };

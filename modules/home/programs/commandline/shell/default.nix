@@ -34,7 +34,7 @@
       tack() {
         GH_TOKEN="$(gh auth token)" command tack "$@"
       }
-
+      eval "$(zoxide init bash)"
       fastfetch
     '';
   };
