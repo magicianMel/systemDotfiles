@@ -16,3 +16,6 @@ input {
   focus-follows-mouse max-scroll-amount="0%"
 }
 
+cursor {
+    xcursor-size 16
+}

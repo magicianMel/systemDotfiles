@@ -1,8 +1,10 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
+    gping
+    bat
     btop
-    hwinfo
-    speedtest-cli
+    eza
+    zoxide
   ];
 }
