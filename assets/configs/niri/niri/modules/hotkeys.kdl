@@ -24,6 +24,9 @@ binds {
     // lock the screen
     Super+Shift+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
 
+    // notification center
+    Super+Shift+N { spawn-sh "swaync-client -t -sw"; }
+
     // open rmpc
     Super+M hotkey-overlay-title="open rmpc" { spawn-sh "kitty rmpc"; }
 

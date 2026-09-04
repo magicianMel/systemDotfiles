@@ -12,10 +12,9 @@ input {
       accel-speed -0.5
       accel-profile "flat"
   }
-  warp-mouse-to-focus
   focus-follows-mouse max-scroll-amount="0%"
 }
 
 cursor {
-    xcursor-size 16
+    xcursor-size 24
 }

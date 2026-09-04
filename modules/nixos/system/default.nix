@@ -9,7 +9,6 @@
     ./nh
     ./audio
     ./ssClipboard
-    ./grub
     ./hardware
   ];
 }

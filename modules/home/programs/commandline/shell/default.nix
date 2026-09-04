@@ -9,6 +9,10 @@
     shellAliases = {
       neofetch = "fastfetch";
       cp = "cp -r";
+      ls = "eza --color=auto";
+      lt = "eza --tree";
+      cat = "bat";
+      cd = "z";
     };
 
     bashrcExtra = ''

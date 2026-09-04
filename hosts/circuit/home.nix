@@ -32,10 +32,10 @@
     enable = true;
     package = pkgs.bibata-cursors;
     name = "Bibata-Modern-Classic";
-    size = 16;
+    size = 24;
     gtk.enable = true;
     x11.enable = true;
     hyprcursor.enable = true;
-    hyprcursor.size = 16;
+    hyprcursor.size = 24;
   };
 }
