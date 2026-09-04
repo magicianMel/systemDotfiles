@@ -17,6 +17,12 @@
 	group = "users";
 	mode = "0600";
       };
+      ssh-key = {
+	recipients = [ "master" ];
+	owner = "clio";
+	group = "users";
+	mode = "0600";
+      };
     };
   };
 }

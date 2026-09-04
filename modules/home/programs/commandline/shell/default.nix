@@ -12,6 +12,8 @@
       ls = "eza --color=auto";
       lt = "eza --tree";
       cat = "bat";
+      nvix = "nvim ~/nixosDotfiles";
+      nhup = "nh os switch ~/nixosDotfiles#circuit --update";
       cd = "z";
     };
 

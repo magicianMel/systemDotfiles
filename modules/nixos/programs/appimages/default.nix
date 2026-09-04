@@ -9,6 +9,8 @@
 	pkgs.libxcrypt-legacy
 	pkgs.python312
 	pkgs.python312Packages.torch
+	pkgs.webkitgtk_4_1
+	pkgs.webkitgtk_6_0
       ];
     };
   };
