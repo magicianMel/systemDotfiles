@@ -1,7 +1,7 @@
-MOBO: Gigabyte B650 Eagle AX rev 1.0
-CPU: AMD Ryzen 5 7600
-GPU: Asus STRIX GAMING OC Radeon RX 5600 XT 6 GB
-MEMORY: G.Skill Flare X5 32 GB (2x16GB) DDR5-6000 CL32
-STORAGE: 1x 512GB Kingston KC3000, 1x 2.048TB Kingston KC3000, 1x 1TB WD Blue Hard Drive
-PSU: SeaSonic M12II 620W 80+ Bronze
+-MOBO: Gigabyte B650 Eagle AX rev 1.0
+-CPU: AMD Ryzen 5 7600
+-GPU: Asus STRIX GAMING OC Radeon RX 5600 XT 6 GB
+-MEMORY: G.Skill Flare X5 32 GB (2x16GB) DDR5-6000 CL32
+-STORAGE: 1x 512GB Kingston KC3000, 1x 2.048TB Kingston KC3000, 1x 1TB WD Blue Hard Drive
+-PSU: SeaSonic M12II 620W 80+ Bronze
 

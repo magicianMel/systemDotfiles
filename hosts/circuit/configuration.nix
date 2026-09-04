@@ -74,6 +74,5 @@
   nixpkgs.config.allowUnfree = true; # allow proprietary software to be downloaded
   nix.settings.experimental-features = [ "nix-command" "flakes" ]; # enable updated nix commands and flakes
   system.stateVersion = "26.05"; # if you touch this they'll get you
-
 }
 
