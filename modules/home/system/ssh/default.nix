@@ -13,7 +13,7 @@
       HostName = "circuit";
       User = "clio";
       IdentityFile = "/run/nix-secrets/secrets/ssh-key";
-      IdenititesOnly = true;
+      IdentitiesOnly = true;
     };
   };
 }
