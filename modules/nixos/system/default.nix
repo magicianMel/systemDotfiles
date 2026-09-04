@@ -6,7 +6,6 @@
     ./secrets
     ./bluetooth
     ./ddwManagers
-    ./nh
     ./audio
     ./ssClipboard
     ./hardware

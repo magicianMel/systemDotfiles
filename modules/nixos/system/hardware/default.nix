@@ -1,6 +1,6 @@
 { config, ... }:
 {
   imports = [
-    ./ntfs
+  ./opentabletdriver
   ];
 }
