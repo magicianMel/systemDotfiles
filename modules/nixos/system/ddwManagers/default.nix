@@ -4,7 +4,7 @@
   imports = [
     ./hyprland
     ./portals
-    ./sddm
+    ./noctalia-greeter
     ./niri
   ];
 }

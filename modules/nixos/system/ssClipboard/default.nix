@@ -4,8 +4,8 @@
     grim
     slurp
     swappy
-
-    copyq
-    
+    wl-clipboard
+    wl-clip-persist
+    cliphist
   ];
 }

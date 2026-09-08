@@ -19,10 +19,13 @@ binds {
     Mod+E { spawn-sh "kitty yazi"; }
 
     // open menu
-    Mod+Space hotkey-overlay-title="Run an Application: rofi" { spawn-sh "~/.config/rofi/launchers/type-2/launcher.sh"; }
+    Mod+Space hotkey-overlay-title="Run an Application: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
 
     // lock the screen
-    Super+Shift+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
+    Super+Shift+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn-sh "noctalia msg session lock"; }
+
+    // clipboard manager
+    Super+Shift+V { spawn-sh "noctalia msg panel-toggle clipboard"; }
 
     // notification center
     Super+Shift+N { spawn-sh "swaync-client -t -sw"; }
