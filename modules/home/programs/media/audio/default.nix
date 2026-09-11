@@ -2,8 +2,8 @@
 {
   services.mpd = {
     enable = true;
-    musicDirectory = "${config.home.homeDirectory}/audio";
-    playlistDirectory = "/mnt/duper/music/playlists/";
+    musicDirectory = "${config.home.homeDirectory}/audio/music/artists";
+    playlistDirectory = "${config.home.homeDirectory}/audio/music/playlists/";
     extraConfig = ''
       audio_output {
 	type "pulse"
