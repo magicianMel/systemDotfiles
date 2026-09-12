@@ -1,8 +1,11 @@
 {
   description = "NixOS Flake";
   inputs = {
+    # packages
     nixpkgs.url = "nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    
+    # noctalia
     noctalia = { 
       url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -11,6 +14,9 @@
       url = "github:noctalia-dev/noctalia-greeter";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    umbriel.url = "git+https://github.com/noctalia-dev/umbriel";
+    
+    # nix add-ons
     nix-secrets.url = "github:unnamed-systems/nix-secrets/dev";
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
