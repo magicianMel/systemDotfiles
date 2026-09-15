@@ -11,7 +11,8 @@
       noto-fonts-color-emoji
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
-      wqyzenhei
+      wqy_zenhei
+      monocraft
     ];
     fontconfig = {
       enable = true;
