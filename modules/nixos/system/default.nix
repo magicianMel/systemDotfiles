@@ -3,6 +3,7 @@
 {
   imports = [
     ./network
+    ./fonts
     ./secrets
     ./bluetooth
     ./ddwManagers
