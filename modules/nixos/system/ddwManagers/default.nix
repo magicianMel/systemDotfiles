@@ -6,5 +6,6 @@
     ./portals
     ./noctalia-greeter
     ./niri
+    ./umbriel
   ];
 }

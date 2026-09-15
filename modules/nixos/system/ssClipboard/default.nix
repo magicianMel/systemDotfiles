@@ -1,9 +1,7 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    grim
-    slurp
-    swappy
+    flameshot
     wl-clipboard
     wl-clip-persist
     cliphist
