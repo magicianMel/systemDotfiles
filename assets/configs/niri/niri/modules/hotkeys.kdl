@@ -17,6 +17,9 @@ binds {
 
     // open file manager
     Mod+E { spawn-sh "kitty yazi"; }
+    
+    // screenshot with niri
+    Mod+Shift+S { spawn-sh "noctalia msg screenshot-region"; }
 
     // open menu
     Mod+Space hotkey-overlay-title="Run an Application: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
@@ -254,9 +257,7 @@ binds {
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
-    Mod+Shift+S { screenshot; }
-    Ctrl+Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
+   
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
