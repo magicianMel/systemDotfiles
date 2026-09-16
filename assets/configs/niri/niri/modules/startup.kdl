@@ -1,7 +1,7 @@
 spawn-at-startup "noctalia"
 spawn-sh-at-startup "awww-daemon"
 spawn-at-startup "easyeffects"
-spawn-sh-at-startup "obs --disable-shutdown-check"
+spawn-sh-at-startup "obs --startreplaybuffer"
 // spawn-sh-at-startup "otd-daemon"
 spawn-sh-at-startup "wl-clip-persist --clipboard regular"
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
