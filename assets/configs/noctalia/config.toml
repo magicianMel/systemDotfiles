@@ -1,0 +1,475 @@
+[audio]
+enable_sounds = true
+notification_sound = "~/nixosDotfiles/assets/sounds/notification.wav"
+
+[backdrop]
+blur_intensity = 0.0
+enabled = true
+tint_intensity = 0.31999999284744263
+
+[bar]
+order = [ "Home" ]
+
+    [bar.Home]
+    background_opacity = 0.0
+    capsule = true
+    capsule_fill = "on_primary"
+    capsule_opacity = 0.46999998949468136
+    capsule_radius = 12
+    capsule_thickness = 0.99999998137354851
+    center = [ "media", "weather" ]
+    color = "#C99C01"
+    end = [
+        "tray",
+        "clipboard",
+        "network",
+        "bluetooth",
+        "volume",
+        "brightness",
+        "Spacer2",
+        "clock",
+        "Spacer",
+        "session",
+        "notifications"
+    ]
+    font_scale = 1.0399999842047691
+    margin_edge = 3
+    margin_ends = 61
+    padding = 15
+    radius = 35
+    scale = 1.1000000089406967
+    shadow = false
+    start = [ "workspaces", "control-center" ]
+
+[brightness]
+enable_ddcutil = true
+
+[calendar]
+enabled = true
+
+    [calendar.account.local_calendar]
+    name = "Birthdays"
+    type = "vdir"
+
+    [calendar.account.personal_google]
+    name = "calendar"
+    type = "google"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000001" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 208.0
+    box_width = 1088.0
+    cx = 1816.0
+    cy = 540.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = -1.5707963705062866
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = false
+        background_opacity = 0.0
+        bands = 84
+        centered = false
+        mirrored = false
+        reversed = true
+        show_when_idle = true
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+pre_action_fade_seconds = 15
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = false
+    timeout = 660.0
+
+[location]
+auto_locate = true
+
+[lockscreen]
+blur_intensity = 0.0
+tint_intensity = 0.0
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-widget-000000000000000a",
+    "lockscreen-widget-0000000000000006",
+    "lockscreen-widget-0000000000000009",
+    "lockscreen-widget-0000000000000008",
+    "lockscreen-login-box@DP-3",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000007",
+    "lockscreen-widget-0000000000000003",
+    "lockscreen-widget-000000000000000b",
+    "lockscreen-widget-0000000000000005",
+    "lockscreen-widget-000000000000000c"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 24
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-3"]
+    box_height = 70.0
+    box_width = 240.0
+    cx = 984.0
+    cy = 935.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
+        background_color = "tertiary"
+        background_opacity = 0.0
+        background_radius = 12.0
+        center_password_text = true
+        input_opacity = 0.38
+        input_radius = 6.0
+        layout = "compact"
+        show_caps_lock = false
+        show_keyboard_layout = false
+        show_login_button = false
+        show_media = false
+        show_session_buttons = false
+        show_unlock_hint = false
+        show_weather = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 304.0
+    box_width = 848.0
+    cx = 1768.0
+    cy = 572.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = -1.5707963705062866
+    type = "audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        bands = 68
+        centered = false
+        color_1 = "#0B51D9"
+        color_2 = "#0823BE"
+        show_when_idle = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 1328.0
+    box_width = 1712.0
+    cx = 1056.0
+    cy = 467.85748291015625
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.52359879016876221
+    type = "calendar"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background = true
+        background_color = "surface_variant"
+        background_opacity = 0.0
+        background_padding = 0
+        background_radius = 0
+        font_family = "Noto Sans CJK JP Light"
+        show_events = false
+        show_week_numbers = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
+    box_height = 24.0
+    box_width = 311.6348876953125
+    cx = 44.6822509765625
+    cy = 44.853912353515625
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = -0.78539818525314331
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000005.settings]
+        background = false
+        center_text = true
+        color = "error"
+        font_family = "FreeMono"
+        format = "{:%H:%M}"
+        shadow = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
+    box_height = 1175.9757080078125
+    box_width = 3102.52685546875
+    cx = 1920.0
+    cy = 501.44915771484375
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.2617993950843811
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
+        background = true
+        background_color = "primary"
+        background_opacity = 0.52000000000000002
+        background_padding = 9
+        background_radius = 20
+        opacity = 0.0
+        shadow = false
+        title = ""
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000007]
+    box_height = 136.5
+    box_width = 309.5
+    cx = 1583.8575439453125
+    cy = 300.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.52359879016876221
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000007.settings]
+        background = false
+        color = "primary"
+        description = ""
+        font_family = "FreeSerif"
+        title = "locked out again?"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000008]
+    box_height = 768.0
+    box_width = 2448.0
+    cx = 681.6796875
+    cy = 1020.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.2617993950843811
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000008.settings]
+        background = true
+        background_color = "hover"
+        background_opacity = 0.19
+        background_padding = 6
+        background_radius = 0
+        opacity = 0.0
+        shadow = false
+        title = ""
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000009]
+    box_height = 768.0
+    box_width = 2448.0
+    cx = 399.7100830078125
+    cy = 573.6796875
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 1.3089969158172607
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000009.settings]
+        background = true
+        background_color = "#053C7A"
+        background_opacity = 0.32000000000000001
+        background_padding = 6
+        background_radius = 0
+        opacity = 0.0
+        shadow = false
+        title = ""
+
+    [lockscreen_widgets.widget.lockscreen-widget-000000000000000a]
+    box_height = 1175.9757080078125
+    box_width = 3102.52685546875
+    cx = 1866.57275390625
+    cy = 959.15594482421875
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.52359879016876221
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-000000000000000a.settings]
+        background = true
+        background_color = "#3B8D52"
+        background_opacity = 0.27000000000000002
+        background_padding = 9
+        background_radius = 20
+        opacity = 0.0
+        shadow = false
+        title = ""
+
+    [lockscreen_widgets.widget.lockscreen-widget-000000000000000b]
+    box_height = 168.0
+    box_width = 216.0
+    cx = 35.107627868652344
+    cy = 0.0
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 1.3089969158172607
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-000000000000000b.settings]
+        background = true
+        background_color = "#053C7A"
+        background_opacity = 1.0
+        background_padding = 6
+        background_radius = 0
+        opacity = 0.0
+        shadow = false
+        title = ""
+
+    [lockscreen_widgets.widget.lockscreen-widget-000000000000000c]
+    box_height = 72.0
+    box_width = 144.0
+    cx = 72.0
+    cy = 137.40829467773438
+    output = "DP-3"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = -0.2617993950843811
+    type = "weather"
+
+        [lockscreen_widgets.widget.lockscreen-widget-000000000000000c.settings]
+        background = false
+        show_forecast = false
+
+[osd.kinds]
+brightness = false
+keyboard_backlight = false
+lock_keys = false
+media = false
+power_profile = false
+
+[plugins]
+enabled = [ "noctalia/kaomoji" ]
+
+[shell]
+avatar_path = "/home/clio/images/profile pictures/2f1b5f16c0afaf1fa89a3c24aadd4963.webp"
+button_borders = false
+card_borders = false
+corner_radius_scale = 0.70000001043081284
+font_family = "CozetteVector"
+input_borders = false
+password_style = "random"
+polkit_agent = true
+popup_borders = false
+show_location = false
+
+    [shell.animation]
+    speed = 1.5000000223517418
+
+    [shell.greeter_sync]
+    auto_sync = true
+
+    [shell.panel]
+    list_item_background = true
+    open_near_click_clipboard = true
+    shadow = false
+    transparency_mode = "soft"
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+[theme]
+builtin = "Ayu"
+community_palette = "Breeze"
+mode = "dark"
+pure_black_dark = true
+shell_mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-fruit-salad"
+
+    [theme.templates]
+    enable_builtin_templates = false
+
+[wallpaper]
+directory = "/home/clio/nixosDotfiles/assets/wallpapers"
+
+    [wallpaper.default]
+    path = "/home/clio/nixosDotfiles/assets/wallpapers/yamada-ryo.jpg"
+
+    [wallpaper.last]
+    path = "/home/clio/nixosDotfiles/assets/wallpapers/yamada-ryo.jpg"
+
+    [wallpaper.monitors.DP-3]
+    path = "/home/clio/nixosDotfiles/assets/wallpapers/yamada-ryo.jpg"
+
+[widget.Spacer]
+type = "spacer"
+
+[widget.Spacer2]
+type = "spacer"
+
+[widget.media]
+anchor = true
+art_size = 8
+interactive = false
+max_length = 800
+title_scroll = "on_hover"
+
+[widget.network]
+show_label = false
+vpn_status = "both"
+
+[widget.tray]
+drawer = true
+
+[widget.weather]
+show_condition = false
