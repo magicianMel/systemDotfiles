@@ -3,6 +3,8 @@
   imports = [
     ./hyprland
     ./kitty
+    ./noctalia
+    ./umbriel
     ./nvim
     ./niri
     ./mpv
