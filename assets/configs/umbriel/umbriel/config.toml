@@ -22,6 +22,7 @@ files = []                                      # Example: ["~/.config/umbriel/n
 
 [general]
 autostart = [ 
+  "keepassxc",
   "noctalia", 
   "aww-daemon", 
   "easyeffects", 
@@ -109,7 +110,7 @@ honor_restored_maximize = false                 # Honor restored maximized state
 
 [workspaces]
 # Each output supports at most 64 workspaces, including empty ones.
-back_and_forth = true                         # Re-select active workspace to switch back
+back_and_forth = false                         # Re-select active workspace to switch back
 empty_above = false                             # Keep one empty workspace above active range
 
 # Workspace entries customize layout. An `index` follows the current position
@@ -119,15 +120,17 @@ empty_above = false                             # Keep one empty workspace above
 # optionally scope by `output`.
 # Documentation: https://docs.noctalia.dev/umbriel/workspaces/#workspace-rules
 
-# [[workspace]]
-# index = 2
-# output = "DP-1"
-# layout.mode = "dwindle"
-# layout.gap = 4
-# layout.struts.top = 24
-# layout.scrolling.center_underfull_strip = false
-# layout.dwindle.preserve_split = true
+ [[workspace]]
+ name = "Work"
+ output = "DP-3"
 
+ [[workspace]]
+ name = "Chat"
+ output = "DP-3"
+
+ [[workspace]]
+ name = "Play"
+ output = "DP-3"
 # Without `output`, every dynamic output gets its own case-sensitive CHAT
 # workspace. Add `output = "DP-1"` to materialize it only there. A numeric
 # string such as name = "2" remains distinct from index = 2.
@@ -529,6 +532,12 @@ default_floating = true
 [[window_rule]]
 match.app_id = "keepassxc"
 default_floating = true
+default_size = [560, 240]
+
+[[window_rule]]
+match.app_id = "obsidian"
+default_workspace = "Work"
+default_focused = false
 
 # Keep Steam notification toasts in the bottom-right corner without stealing
 # focus, and pin them so workspace switches do not hide them.
@@ -553,12 +562,17 @@ default_pinned = true
 # come from a static name list or a name-based [[workspace]] entry on a dynamic
 # output. The window rule itself never creates a workspace.
 
-# [[window_rule]]
-# match.app_id = "^org[.]example[.]Chat$"
-# default_output = "DP-1"
-# default_workspace = "CHAT"
-# default_focused = false
-
+ [[window_rule]]
+ match.app_id = "discord"
+ default_output = "DP-3"
+ default_workspace = "Chat"
+ default_focused = false
+ 
+ [[window_rule]]
+ match.app_id = "krita"
+ default_output = "DP-3"
+ default_workspace = "Work"
+ default_focused = false
 # Store a dedicated terminal in the named `terminal` scratchpad. Enable its
 # [[scratchpad]] definition above, then launch
 # `foot --app-id scratchpad-terminal`. The output and workspace remain
