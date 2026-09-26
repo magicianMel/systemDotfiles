@@ -9,4 +9,9 @@
     enable = true;
     openFirewall = true;
   };
+
+  # The Philippines has banned Discord! Oh no!
+  services.cloudflare-warp.enable = true;
+
+  environment.systemPackages = [ pkgs.cloudflare-warp ];
 }

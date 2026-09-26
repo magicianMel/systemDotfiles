@@ -1,0 +1,11 @@
+[general]
+autostart = [ 
+  "keepassxc",
+  "noctalia", 
+  "aww-daemon", 
+  "easyeffects", 
+  "obs --startreplaybuffer --minimize-to-tray", 
+  "wl-clip-persist --clipboard regular", 
+  "wl-paste --type text --watch cliphist store", 
+  "wl-paste --type image --watch cliphist store", 
+] 

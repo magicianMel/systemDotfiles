@@ -13,6 +13,8 @@
       noto-fonts-cjk-serif
       wqy_zenhei
       monocraft
+      annotation-mono
+      nerd-fonts.monofur
     ];
     fontconfig = {
       enable = true;
