@@ -14,7 +14,7 @@ track_layout = "global"                         # global, or window for per-surf
 
 [input.touchpad]
 tap = true                                      # Tap-to-click
-natural_scroll = true                         # Omit to preserve the libinput default
+natural_scroll = false                         # Omit to preserve the libinput default
 accel_profile = "flat"                    # flat, adaptive, or custom <step> <points...>
 sensitivity = -0.25                             # Pointer speed, -1.0 to 1.0
 scroll_factor = 1                           # Two-finger scroll multiplier, 0.1-10.0
@@ -36,7 +36,7 @@ enabled = true                                  # False disables tablet tools an
 # map_to_output = "DP-1"                        # Connector or monitor Config name
 # map_to_focused_output = false
 # map_to_focused_window = false                 # Focused-window mapping has highest priority
-# left_handed = false
+left_handed = true
 # calibration_matrix = [1.0, 0.0, 0.0, 0.0, 1.0, 0.0]
 
 [input.cursor]
