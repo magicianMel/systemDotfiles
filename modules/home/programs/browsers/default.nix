@@ -3,5 +3,6 @@
   imports = [
     ./firefox
     ./chromium
+    ./tor
   ];
 }

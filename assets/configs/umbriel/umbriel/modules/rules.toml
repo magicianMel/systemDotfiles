@@ -37,7 +37,7 @@ default_floating_size_px = { width = 560, height = 240 }
 
 [[window_rule]]
 match.app_id = "obsidian"
-default_workspace = "Work"
+default_workspace = "work"
 default_focused = false
 
 # Keep Steam notification toasts in the bottom-right corner without stealing
@@ -66,13 +66,13 @@ default_pinned = true
  [[window_rule]]
  match.app_id = "discord"
  default_output = "DP-3"
- default_workspace = "Chat"
+ default_workspace = "chat"
  default_focused = false
  
  [[window_rule]]
  match.app_id = "krita"
  default_output = "DP-3"
- default_workspace = "Work"
+ default_workspace = "work"
  default_focused = false
 # Store a dedicated terminal in the named `terminal` scratchpad. Enable its
 # [[scratchpad]] definition above, then launch
