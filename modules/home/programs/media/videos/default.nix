@@ -1,9 +1,9 @@
-{ config, pkgs, lib, ... }:
+{ config, inputs, pkgs, lib, ... }:
 {
   programs.mpv = {
     enable = true;
   };
   home.packages = with pkgs; [
-    ani-cli
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.system}.ani-cli
   ];
 }

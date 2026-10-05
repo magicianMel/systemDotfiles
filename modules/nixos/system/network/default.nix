@@ -10,6 +10,8 @@
     openFirewall = true;
   };
 
+  programs.kdeconnect.enable = true;
+ 
   # The Philippines has banned Discord! Oh no!
   services.cloudflare-warp.enable = true;
 
