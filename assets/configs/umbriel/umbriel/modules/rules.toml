@@ -65,13 +65,13 @@ default_pinned = true
 
  [[window_rule]]
  match.app_id = "discord"
- default_output = "DP-3"
+ default_output = "DP-1"
  default_workspace = "chat"
  default_focused = false
  
  [[window_rule]]
  match.app_id = "krita"
- default_output = "DP-3"
+ default_output = "DP-1"
  default_workspace = "work"
  default_focused = false
 # Store a dedicated terminal in the named `terminal` scratchpad. Enable its

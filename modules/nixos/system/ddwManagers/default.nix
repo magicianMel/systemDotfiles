@@ -2,10 +2,10 @@
 
 {
   imports = [
-    ./hyprland
+#    ./hyprland
     ./portals
     ./noctalia-greeter
-    ./niri
+#    ./niri
     ./umbriel
   ];
 }

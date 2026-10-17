@@ -7,9 +7,6 @@
 
   environment.systemPackages = with pkgs; [
     # notification center
-    hyprlock
-    hypridle
     awww
-    swaynotificationcenter # notification center
   ];
 }

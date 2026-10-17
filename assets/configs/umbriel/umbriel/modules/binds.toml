@@ -106,8 +106,8 @@ mod_key = "Super"
 
 # Optional navigation and sizing recipes. These chords do not replace active
 # bindings above when uncommented.
-# "Mod+Page_Up" = "workspace-previous"
-# "Mod+Page_Down" = "workspace-next"
+ "Mod+U" = "workspace-previous"
+ "Mod+I" = "workspace-next"
 # "Mod+Shift+Page_Up" = "window-move-to-workspace-previous"
 # "Mod+Shift+Page_Down" = "window-move-to-workspace-next"
 # "Mod+Home" = "column-focus-first"
@@ -163,13 +163,13 @@ mod_key = "Super"
 
 # Media and brightness
 # Documentation: https://docs.noctalia.dev/umbriel/keybinds/#example-media-and-brightness-keys
-# "XF86AudioRaiseVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
-# "XF86AudioLowerVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-# "XF86AudioMute" = "spawn:wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-# "XF86AudioPlay" = "spawn:playerctl play-pause"
-# "XF86AudioNext" = "spawn:playerctl next"
-# "XF86AudioPrev" = "spawn:playerctl previous"
+ "XF86AudioRaiseVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+ "XF86AudioLowerVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+ "XF86AudioMute" = "spawn:wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+ "XF86AudioPlay" = "spawn:playerctl play-pause"
+ "XF86AudioNext" = "spawn:playerctl next"
+ "XF86AudioPrev" = "spawn:playerctl previous"
 # Binds intended to work while locked use the table form.
-# "XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down 10", allow_when_locked = true }
-# "XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up 10", allow_when_locked = true }
+ "XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down 10", allow_when_locked = true }
+ "XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up 10", allow_when_locked = true }
 

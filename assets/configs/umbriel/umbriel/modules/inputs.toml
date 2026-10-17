@@ -36,7 +36,7 @@ enabled = true                                  # False disables tablet tools an
 # map_to_output = "DP-1"                        # Connector or monitor Config name
 # map_to_focused_output = false
 # map_to_focused_window = false                 # Focused-window mapping has highest priority
-left_handed = true
+left_handed = false
 # calibration_matrix = [1.0, 0.0, 0.0, 0.0, 1.0, 0.0]
 
 [input.cursor]

@@ -78,7 +78,7 @@ widget_order = [ "desktop-widget-0000000000000001" ]
     box_width = 1088.0
     cx = 1816.0
     cy = 540.0
-    output = "DP-3"
+    output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = -1.5707963705062866
@@ -127,7 +127,7 @@ widget_order = [
     "lockscreen-widget-0000000000000006",
     "lockscreen-widget-0000000000000009",
     "lockscreen-widget-0000000000000008",
-    "lockscreen-login-box@DP-3",
+    "lockscreen-login-box@DP-1",
     "lockscreen-widget-0000000000000001",
     "lockscreen-widget-0000000000000007",
     "lockscreen-widget-0000000000000003",
@@ -141,18 +141,18 @@ widget_order = [
     major_interval = 4
     visible = true
 
-    [lockscreen_widgets.widget."lockscreen-login-box@DP-3"]
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
     box_height = 70.0
     box_width = 240.0
     cx = 984.0
     cy = 935.0
-    output = "DP-3"
+    output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
-        [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
         background_color = "tertiary"
         background_opacity = 0.0
         background_radius = 12.0
@@ -173,7 +173,7 @@ widget_order = [
     box_width = 848.0
     cx = 1768.0
     cy = 572.0
-    output = "DP-3"
+    output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = -1.5707963705062866
@@ -192,7 +192,7 @@ widget_order = [
     box_width = 1712.0
     cx = 1056.0
     cy = 467.85748291015625
-    output = "DP-3"
+    output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = 0.52359879016876221
@@ -213,7 +213,7 @@ widget_order = [
     box_width = 311.6348876953125
     cx = 44.6822509765625
     cy = 44.853912353515625
-    output = "DP-3"
+    output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = -0.78539818525314331
@@ -232,7 +232,7 @@ widget_order = [
     box_width = 3102.52685546875
     cx = 1920.0
     cy = 501.44915771484375
-    output = "DP-3"
+    output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = 0.2617993950843811
@@ -253,7 +253,7 @@ widget_order = [
     box_width = 309.5
     cx = 1583.8575439453125
     cy = 300.0
-    output = "DP-3"
+    output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = 0.52359879016876221
@@ -271,7 +271,7 @@ widget_order = [
     box_width = 2448.0
     cx = 681.6796875
     cy = 1020.0
-    output = "DP-3"
+    output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = 0.2617993950843811
@@ -292,7 +292,7 @@ widget_order = [
     box_width = 2448.0
     cx = 399.7100830078125
     cy = 573.6796875
-    output = "DP-3"
+    output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = 1.3089969158172607
@@ -313,7 +313,7 @@ widget_order = [
     box_width = 3102.52685546875
     cx = 1866.57275390625
     cy = 959.15594482421875
-    output = "DP-3"
+    output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = 0.52359879016876221
@@ -334,7 +334,7 @@ widget_order = [
     box_width = 216.0
     cx = 35.107627868652344
     cy = 0.0
-    output = "DP-3"
+    output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = 1.3089969158172607
@@ -355,7 +355,7 @@ widget_order = [
     box_width = 144.0
     cx = 72.0
     cy = 137.40829467773438
-    output = "DP-3"
+    output = "DP-1"
     placement_height = 1080.0
     placement_width = 1920.0
     rotation = -0.2617993950843811
@@ -448,7 +448,7 @@ directory = "/home/clio/nixosDotfiles/assets/wallpapers"
     [wallpaper.last]
     path = "/home/clio/nixosDotfiles/assets/wallpapers/yamada-ryo.jpg"
 
-    [wallpaper.monitors.DP-3]
+    [wallpaper.monitors.DP-1]
     path = "/home/clio/nixosDotfiles/assets/wallpapers/yamada-ryo.jpg"
 
 [widget.Spacer]

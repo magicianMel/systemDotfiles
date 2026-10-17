@@ -2,7 +2,6 @@
 autostart = [ 
   "keepassxc",
   "noctalia", 
-  "aww-daemon", 
   "easyeffects", 
   "obs --startreplaybuffer --minimize-to-tray", 
   "wl-clip-persist --clipboard regular", 
