@@ -7,4 +7,5 @@ autostart = [
   "wl-clip-persist --clipboard regular", 
   "wl-paste --type text --watch cliphist store", 
   "wl-paste --type image --watch cliphist store", 
+  "playerctl status --format '{{ playerName }}' --follow > /tmp/player-last",
 ] 

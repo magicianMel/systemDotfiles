@@ -163,10 +163,10 @@ mod_key = "Super"
 
 # Media and brightness
 # Documentation: https://docs.noctalia.dev/umbriel/keybinds/#example-media-and-brightness-keys
- "XF86AudioRaiseVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
- "XF86AudioLowerVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+ "XF86AudioRaiseVolume" = "spawn:playerctl volume 0.05+ -p `tail -n 1 /tmp/player-last`"
+ "XF86AudioLowerVolume" = "spawn:playerctl volume 0.05- -p `tail -n 1 /tmp/player-last`"
  "XF86AudioMute" = "spawn:wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
- "XF86AudioPlay" = "spawn:playerctl play-pause"
+ "XF86AudioPlay" = "spawn:playerctl play-pause -p `tail -n 1 /tmp/player-last`"
  "XF86AudioNext" = "spawn:playerctl next"
  "XF86AudioPrev" = "spawn:playerctl previous"
 # Binds intended to work while locked use the table form.
