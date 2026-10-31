@@ -74,6 +74,15 @@ default_pinned = true
  default_output = "DP-1"
  default_workspace = "work"
  default_focused = false
+
+ [[window_rule]]
+ match.app_id = "steam"
+ default_workspace = "games"
+ default_focused = false
+
+ [[window_rule]]
+ match.is_dialog = true
+ default_floating = true
 # Store a dedicated terminal in the named `terminal` scratchpad. Enable its
 # [[scratchpad]] definition above, then launch
 # `foot --app-id scratchpad-terminal`. The output and workspace remain

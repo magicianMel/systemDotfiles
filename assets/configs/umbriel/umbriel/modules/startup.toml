@@ -1,6 +1,6 @@
 [general]
 autostart = [ 
-  "keepassxc",
+  "keepassxc --minimized",
   "noctalia", 
   "easyeffects", 
   "obs --startreplaybuffer --minimize-to-tray", 
