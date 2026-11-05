@@ -4,22 +4,22 @@ mod_key = "Super"
 [keybinds]
 
 # Applications and session
-"Mod+Return" = "spawn:kitty"
-"Mod+B" = "spawn:firefox"
-"Mod+E" = "spawn:kitty yazi"
-"Mod+M" = "spawn:kitty rmpc"
-"Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+Return" = "spawn kitty"
+"Mod+B" = "spawn firefox"
+"Mod+E" = "spawn kitty yazi"
+"Mod+M" = "spawn kitty rmpc"
+"Mod+Space" = "spawn noctalia msg panel-toggle launcher"
 "Mod+Q" = "window-close"
-"Mod+Shift+L" = "spawn:noctalia msg session lock"
-"Mod+Shift+S" = "spawn:noctalia msg screenshot-region"
-"Ctrl+Alt+Slash" = "spawn:noctalia msg mic-mute"
-"Mod+N" = "spawn:noctalia msg panel-toggle control-center notifications"
-"Mod+Shift+N" = "spawn:noctalia msg notification-dnd-toggle"
-"Alt+Tab" = "spawn:noctalia msg window-switcher"
-"Mod+Shift+I" = "spawn:noctalia msg settings-toggle"
+"Mod+Shift+L" = "spawn noctalia msg session lock"
+"Mod+Shift+S" = "spawn noctalia msg screenshot-region"
+"Ctrl+Alt+Slash" = "spawn noctalia msg mic-mute"
+"Mod+N" = "spawn noctalia msg panel-toggle control-center notifications"
+"Mod+Shift+N" = "spawn noctalia msg notification-dnd-toggle"
+"Alt+Tab" = "spawn noctalia msg window-switcher"
+"Mod+Shift+I" = "spawn noctalia msg settings-toggle"
 
 # obs save replay
-"Alt+Grave" = "spawn:obs-cmd replay save"
+"Alt+Grave" = "spawn obs-cmd replay save"
 
 # Focus navigation. In overview, Mod+Up/Down retain normal layout focus, so they
 # traverse stacks in the default horizontal layout. Bare Up/Down move between
@@ -56,24 +56,24 @@ mod_key = "Super"
 "Mod+WheelDown" = "window-focus-right"
 
 # Workspaces. Bare digits are positions on the output under the pointer.
-"Mod+1" = "workspace-switch:1"
-"Mod+2" = "workspace-switch:2"
-"Mod+3" = "workspace-switch:3"
-"Mod+4" = "workspace-switch:4"
-"Mod+5" = "workspace-switch:5"
-"Mod+6" = "workspace-switch:6"
-"Mod+7" = "workspace-switch:7"
-"Mod+8" = "workspace-switch:8"
-"Mod+9" = "workspace-switch:9"
-"Mod+Ctrl+1" = "window-move-to-workspace:1"
-"Mod+Ctrl+2" = "window-move-to-workspace:2"
-"Mod+Ctrl+3" = "window-move-to-workspace:3"
-"Mod+Ctrl+4" = "window-move-to-workspace:4"
-"Mod+Ctrl+5" = "window-move-to-workspace:5"
-"Mod+Ctrl+6" = "window-move-to-workspace:6"
-"Mod+Ctrl+7" = "window-move-to-workspace:7"
-"Mod+Ctrl+8" = "window-move-to-workspace:8"
-"Mod+Ctrl+9" = "window-move-to-workspace:9"
+"Mod+1" = "workspace-switch 1"
+"Mod+2" = "workspace-switch 2"
+"Mod+3" = "workspace-switch 3"
+"Mod+4" = "workspace-switch 4"
+"Mod+5" = "workspace-switch 5"
+"Mod+6" = "workspace-switch 6"
+"Mod+7" = "workspace-switch 7"
+"Mod+8" = "workspace-switch 8"
+"Mod+9" = "workspace-switch 9"
+"Mod+Ctrl+1" = "window-move-to-workspace 1"
+"Mod+Ctrl+2" = "window-move-to-workspace 2"
+"Mod+Ctrl+3" = "window-move-to-workspace 3"
+"Mod+Ctrl+4" = "window-move-to-workspace 4"
+"Mod+Ctrl+5" = "window-move-to-workspace 5"
+"Mod+Ctrl+6" = "window-move-to-workspace 6"
+"Mod+Ctrl+7" = "window-move-to-workspace 7"
+"Mod+Ctrl+8" = "window-move-to-workspace 8"
+"Mod+Ctrl+9" = "window-move-to-workspace 9"
 # Quote an all-digit name to distinguish it from a position.
 # "Mod+Ctrl+2" = 'workspace-switch:"2"/DP-2'
 
@@ -163,13 +163,13 @@ mod_key = "Super"
 
 # Media and brightness
 # Documentation: https://docs.noctalia.dev/umbriel/keybinds/#example-media-and-brightness-keys
- "XF86AudioRaiseVolume" = "spawn:playerctl volume 0.05+ -p `tail -n 1 /tmp/player-last`"
- "XF86AudioLowerVolume" = "spawn:playerctl volume 0.05- -p `tail -n 1 /tmp/player-last`"
- "XF86AudioMute" = "spawn:wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
- "XF86AudioPlay" = "spawn:playerctl play-pause -p `tail -n 1 /tmp/player-last`"
- "XF86AudioNext" = "spawn:playerctl next"
- "XF86AudioPrev" = "spawn:playerctl previous"
+ "XF86AudioRaiseVolume" = "spawn playerctl volume 0.05+ -p `tail -n 1 /tmp/player-last`"
+ "XF86AudioLowerVolume" = "spawn playerctl volume 0.05- -p `tail -n 1 /tmp/player-last`"
+ "XF86AudioMute" = "spawn wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+ "XF86AudioPlay" = "spawn playerctl play-pause -p `tail -n 1 /tmp/player-last`"
+ "XF86AudioNext" = "spawn playerctl next"
+ "XF86AudioPrev" = "spawn playerctl previous"
 # Binds intended to work while locked use the table form.
- "XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down 10", allow_when_locked = true }
- "XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up 10", allow_when_locked = true }
+ "XF86MonBrightnessDown" = { action = "spawn noctalia msg brightness-down 10", allow_when_locked = true }
+ "XF86MonBrightnessUp" = { action = "spawn noctalia msg brightness-up 10", allow_when_locked = true }
 

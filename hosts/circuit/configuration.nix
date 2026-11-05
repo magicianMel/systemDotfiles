@@ -32,6 +32,10 @@
       };
     };
   
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-42.11.18"
+  ];
   # enable ntfs and mount duper
   environment.systemPackages = [ pkgs.ntfs3g pkgs.ntfsprogs ];
   boot.supportedFilesystems = [ "ntfs" ];
