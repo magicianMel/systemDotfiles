@@ -23,19 +23,31 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = { self, nixpkgs, nixpkgs-unstable, ... } @inputs: 
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs: 
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacypackages.${system};
-      pkgs-unstable = import nixpkgs-unstable {inherit system; config.allowUnfree = true; };
     in { 
-      nixosConfigurations.circuit = nixpkgs.lib.nixosSystem {
-	specialArgs = { inherit inputs; };
-	modules = [
-	  ./hosts/circuit/configuration.nix
-	  inputs.home-manager.nixosModules.default
-	];
+      nixosConfigurations = {
+	circuit = lib.nixosSystem {
+	  specialArgs = { inherit inputs; };
+	  modules = [
+	    ./hosts/circuit/configuration.nix
+	    inputs.home-manager.nixosModules.home-manager
+	    ({ config, ... }: {
+	      home-manager.extraSpecialArgs = {
+		pkgsUnstable = import nixpkgs-unstable {
+		  inherit system;
+		  config = config.nixpkgs.config;
+		  overlays = config.nixpkgs.overlays;
+		};
+	      # pkgsUnstable = nixpkgs-unstable.legacyPackages.${system};
+	      };
+	    })
+	  ];
+	};
+
+
       };
     };
 }

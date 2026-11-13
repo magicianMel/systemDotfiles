@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, pkgsUnstable, ... }:
 {
   programs.obs-studio = {
     enable = true;
@@ -13,6 +13,6 @@
   };
 
   home.packages = [
-    inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.system}.obs-cmd
+  pkgsUnstable.obs-cli
   ];
 }

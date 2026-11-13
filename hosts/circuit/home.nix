@@ -10,7 +10,6 @@
     ./../../assets/configs
   ];
   programs.home-manager.enable = true;
-  nixpkgs.config.allowUnfree = true;
   # lowercase user directories
   xdg.userDirs = {
     enable = true;

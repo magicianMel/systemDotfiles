@@ -1,6 +1,6 @@
-{ inputs, config, pkgs, ... }:
+{ config, pkgs, pkgsUnstable, ... }:
 {
   home.packages = [
-    inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.system}.obsidian
+    pkgsUnstable.obsidian
   ];
 }
