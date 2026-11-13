@@ -31,11 +31,9 @@ empty_above = false                             # Keep one empty workspace above
 
 # Scratchpads
 
-# [[scratchpad]]
-# name = "terminal"
-
-# [[scratchpad]]
-# name = "music"
+ [[scratchpad]]
+ name = "terminal"
+ spawn_when_empty = "kitty"
 
 # A `default_scratchpad` window rule can store new matching windows
 # automatically. Use "default" while the definitions above remain commented,

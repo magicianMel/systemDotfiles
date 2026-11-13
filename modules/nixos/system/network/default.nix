@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ inputs, config, pkgs, lib, ... }:
 {
   networking.networkmanager.enable = true;
   services.openssh = {
@@ -14,6 +14,10 @@
  
   # The Philippines has banned Discord! Oh no!
   services.cloudflare-warp.enable = true;
-
-  environment.systemPackages = [ pkgs.cloudflare-warp pkgs.kdePackages.plasma-integration ];
+  # tailcat
+  environment.systemPackages = [ 
+    pkgs.cloudflare-warp
+    pkgs.kdePackages.plasma-integration
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.system}.tailcat
+  ];
 }

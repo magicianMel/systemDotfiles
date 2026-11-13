@@ -4,7 +4,8 @@ mod_key = "Super"
 [keybinds]
 
 # Applications and session
-"Mod+Return" = "spawn kitty"
+"Mod+Return" = "scratchpad-toggle terminal"
+"Mod+Shift+Return" = "spawn kitty"
 "Mod+B" = "spawn firefox"
 "Mod+E" = "spawn kitty yazi"
 "Mod+M" = "spawn kitty rmpc"
@@ -89,10 +90,6 @@ mod_key = "Super"
 # hidden scratchpad target to the output under the pointer. The `-warp` form
 # then moves the cursor to that target.
 # Documentation: https://docs.noctalia.dev/umbriel/scratchpads/
-"Mod+Tab" = "scratchpad-toggle"
-"Mod+Shift+Space" = "window-move-to-scratchpad"
-"Mod+Ctrl+Space" = "window-restore-from-scratchpad"
-#"Mod+Tab" = "scratchpad-focus-next"
 
 # Named mode recipe: uncomment the definitions above, then replace the four
 # action values with named forms such as these. Every scratchpad action needs a

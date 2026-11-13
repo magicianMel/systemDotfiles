@@ -64,8 +64,8 @@ default_pinned = true
 # output. The window rule itself never creates a workspace.
 
  [[window_rule]]
- match.app_id = "discord"
- default_output = "DP-1"
+ match.app_id = ["discord", "vesktop"]
+ default_scratchpad = "chat"
  default_workspace = "chat"
  default_focused = false
  
@@ -76,8 +76,17 @@ default_pinned = true
  default_focused = false
 
  [[window_rule]]
- match.app_id = "steam"
+ match.app_id = "^steam$"
  default_workspace = "games"
+ default_floating = true
+ default_floating_size_px = { width = 350, height = 650 }
+ default_focused = false
+
+ [[window_rule]]
+ match.title = "^Steam$"
+ default_workspace = "games"
+ default_maximize_to_edges = true
+ default_floating = false
  default_focused = false
 
  [[window_rule]]
@@ -88,15 +97,15 @@ default_pinned = true
 # `foot --app-id scratchpad-terminal`. The output and workspace remain
 # its restore destination.
 
-# [[window_rule]]
-# match.app_id = "^scratchpad-terminal$"
-# default_scratchpad = "terminal"
-# default_output = "DP-1"
-# default_workspace = 2
-# default_floating = true
-# default_width = 0.6
-# default_height = 0.5
-# default_position = { x = 0, y = 8, anchor = "top" }
+ [[window_rule]]
+ match.app_id = "kitty"
+ default_scratchpad = "terminal"
+ default_output = "DP-1"
+ default_workspace = 2
+ default_floating = true
+ default_width = 0.6
+ default_height = 0.5
+ default_position = { x = 0, y = 8, anchor = "top" }
 
 # [[window_rule]]
 # match.app_id = "^example-app$"

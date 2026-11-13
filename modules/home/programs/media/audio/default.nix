@@ -36,6 +36,7 @@
     cava
     carla
     mpd-discord-rpc
+    snapcast
     easyeffects
   ];
 }
