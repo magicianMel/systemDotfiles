@@ -13,6 +13,6 @@
   };
 
   home.packages = [
-  pkgsUnstable.obs-cli
+  pkgsUnstable.obs-cmd
   ];
 }
